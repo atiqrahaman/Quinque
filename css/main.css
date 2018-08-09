@@ -1837,6 +1837,7 @@ a.info {
 .pr-button {
 	border-top: 1px solid #e5e5e5;
 	overflow: hidden;
+	margin: auto;
 	transition: all .5s ease-out 0s
 }
 .pr-info-area .product-name a:hover, .pr-button .mt-button a:hover {
