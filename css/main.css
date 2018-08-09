@@ -754,19 +754,7 @@ input:focus {
 	position: relative;
 	z-index: 10
 }
-@media (max-width:767px) {
-.logo {
-	margin-top: 15px;
-	text-align: center;
-	padding-bottom: 12px;
-	margin-bottom: 0px;
-	width: 100%
-}
-}
- @media only screen and (min-width: 0px) and (max-width: 479px) {
-header .logo a img {
-	width: 55%
-}
+
 .single-collection {
     margin-bottom: 15px;
 }
@@ -4135,7 +4123,7 @@ html {
 	top: 0;
 	background: #000;
 	z-index: 99999;
-	display: none;
+	display: visible;
 	font-size: 13px;
 	line-height: 1.42857;
 	text-transform: none;
@@ -6708,7 +6696,7 @@ ul.list-wishlist {
 	color: #0fb7a4;
 }
 .mmPushBody .fa-align-justify:before {
-	content: "\f00d";
+	content: "\f039";
 }
 /*--------------------------------------------------------------
 34. Team Member
@@ -6942,3 +6930,103 @@ ul.list-wishlist {
  .shadow {
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
  }
+
+
+
+
+/*======== Edited ============*/
+
+nav .container .row {
+
+	display: flex;
+}
+
+nav .container .row .mtmegamenu {
+
+	width: auto;
+	display: inline-block;
+	margin: auto;
+}
+
+nav .container .row .mtmegamenu .mt-root-item:hover  {
+
+	background-color:  #0fb7a4;
+	transition: all 300ms;
+}
+
+nav .container .row .mtmegamenu .mt-root-item span {
+	background-color: transparent;
+	padding: 20px;
+}
+
+nav .container .row .mtmegamenu .active-page span {
+	color:  #0fb7a4;
+}
+
+nav .container .row .mtmegamenu .active-page:hover {
+	background-color: transparent;
+}
+
+.mtmegamenu ul li {
+	margin-right: 0px;
+}
+
+
+
+.main-title {
+	height: 150px;
+	display: flex;
+}
+
+.main-title h1 {
+	margin: auto;
+	font-weight: 600;
+	font-size: 300%;
+	text-align: center;
+}
+
+
+.main-logo {
+	height: 150px;
+	display: flex;
+}
+
+.logo {
+	width: 70%;
+	margin: auto;
+}
+.logo img {
+	position: relative;
+	z-index: 10
+}
+@media (max-width:992px) {
+	.logo {
+		width: 70%;
+		margin: auto;
+	}
+
+	.main-title h1 {
+		font-size: 230%;
+	}
+}
+
+
+@media (max-width:767px) {
+	.logo {
+		display: flex;
+		height: 100%;
+		width: 100%;
+		margin: auto;
+	}
+
+	.logo a {
+		display: flex;
+		height: 100%;
+		width: 100%;
+		margin: auto;
+	}
+	.logo img {
+		width: 120px;
+		margin: auto;
+	}
+}
