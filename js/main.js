@@ -627,8 +627,29 @@ Stick menu
 ******************************************/
 
 jQuery(window).scroll(function() {
-        jQuery(this).scrollTop() > 1 ? jQuery("nav").addClass("stick") : jQuery("nav").removeClass("stick"),
-            jQuery(this).scrollTop() > 1 ? jQuery(".top-cart").addClass("stick") : jQuery(".top-cart").removeClass("stick")
+        // jQuery(this).scrollTop() > 1 ? jQuery("nav").addClass("stick") : jQuery("nav").removeClass("stick"),
+
+
+        var num = 150; //number of pixels before modifying styles
+        var top = 0;
+
+        $(window).bind('scroll', function () {
+            if ($(window).scrollTop() > num) {
+                $('nav').addClass('stick');
+            } else {
+                $('nav').removeClass('stick');
+            }
+        });
+
+        $(window).bind('scroll', function () {
+            if ($(window).scrollTop() > num) {
+                $('#sticker').addClass('stick');
+            } else {
+                $('#sticker').removeClass('stick');
+            }
+        });
+
+            // jQuery(this).scrollTop() > 1 ? jQuery(".top-cart").addClass("stick") : jQuery(".top-cart").removeClass("stick")
 
     }),
 

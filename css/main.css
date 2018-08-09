@@ -796,12 +796,7 @@ header .logo a img {
 	display: none;
 	padding-left: 20%;
 }
-nav.stick .stick-logo {
-	left: 15px;
-	position: absolute;
-	top: 8px;
-	display: block
-}
+
 @media only screen and (min-width:768px) and (max-width:1169px) {
 nav.stick .stick-logo {
 	display: none
@@ -1003,11 +998,7 @@ nav.stick .stick-logo {
 	top: -28px;
 	z-index: 1000
 }
-@media (max-width:1023px) {
-.stick.top-cart {
-	display: none
-}
-}
+
 @media (max-width:1024px) {
 .stick.top-cart {
 	right: 0px;
@@ -4119,7 +4110,7 @@ html {
 	overflow-x: hidden
 }
 #mobile-menu {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	background: #000;
 	z-index: 99999;
@@ -4231,7 +4222,7 @@ html {
 	width: auto;
 	float: left;
 	background: #000;
-	height: 40px
+	height: 40px;
 }
 .mm-toggle-wrap {
 	display: none
@@ -6944,7 +6935,7 @@ nav .container .row {
 nav .container .row .mtmegamenu {
 
 	width: auto;
-	display: inline-block;
+	display: block;
 	margin: auto;
 }
 
@@ -6969,6 +6960,33 @@ nav .container .row .mtmegamenu .active-page:hover {
 
 .mtmegamenu ul li {
 	margin-right: 0px;
+}
+
+
+
+
+nav.stick {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.stick {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+
+nav.stick .stick-logo {
+	left: 5px;
+	position: absolute;
+	top: 8px;
+	display: block;
+}
+
+nav.stick .stick-logo img {
+	width: 45px;
 }
 
 
@@ -7029,4 +7047,26 @@ nav .container .row .mtmegamenu .active-page:hover {
 		width: 120px;
 		margin: auto;
 	}
+}
+
+
+.bar {
+	padding-left: 0px;
+}
+@media (max-width:767px) {
+.bar {
+	width: 100%;
+	background: #0fb7a4
+}
+}
+@media only screen and (min-width:768px) and (max-width:1023px) {
+.bar {
+	padding-right: 5px;
+	width: 28%
+}
+}
+@media only screen and (min-width:1024px) and (max-width:1169px) {
+.bar {
+	padding-right: 5px;
+	width: 24%
 }
