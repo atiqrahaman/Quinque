@@ -1012,7 +1012,7 @@ nav.stick .stick-logo {
 }
 .top-cart {
 	padding-left: 0px;
-	z-index: 1000;
+	z-index: 1000
 }
 @media (max-width:767px) {
 .top-cart {
