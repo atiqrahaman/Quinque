@@ -7071,3 +7071,15 @@ nav.stick .stick-logo img {
 	padding-right: 5px;
 	width: 24%
 }
+
+}
+
+
+.table {
+	border-radius: 5px;
+}
+
+.table thead {
+	background-color: #111;
+	color: #fff;
+}
