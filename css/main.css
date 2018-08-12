@@ -3112,9 +3112,7 @@ a.play-bnt .fa.fa-play {
 }
 }
 .our-clients .slider-items-products .owl-buttons .owl-next {
-	position: absolute;
-	right: -22px;
-	top: 15px
+
 }
 @media (max-width:479px) {
 .our-clients .slider-items-products .owl-buttons .owl-next {
@@ -7071,3 +7069,5 @@ nav.stick .stick-logo img {
 	padding-right: 5px;
 	width: 24%
 }
+}
+
