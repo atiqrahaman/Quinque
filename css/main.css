@@ -7071,3 +7071,29 @@ nav.stick .stick-logo img {
 	padding-right: 5px;
 	width: 24%
 }
+
+}
+
+.table {
+	margin-top: 40px;
+}
+
+.table thead {
+	background-color: #111;
+	color: #fff;
+}
+
+table.table-bordered{
+    border:1px solid #111;
+    margin-top: 10px;
+  }
+table.table-bordered > thead > tr > th{
+    border:1px solid #111;
+}
+table.table-bordered > tbody > tr > td{
+    border:1px solid #111;
+}
+
+table th, td {
+	text-align: center;
+}
